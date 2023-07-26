@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    --color-1: #F8313B;
+    --color-2: #292A49;
+    --color-3: rgb(221, 218, 218);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+    color: var(--color-2);
+}
+
+header {
+    background-color: var(--color-1);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 90%;
+}
+
+section.exemplo {
+    padding: 100px 0 30px 0;
+    position: relative;
+}
+
+.sobre {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.ex-card {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-3);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.ex-card p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-2);
+}
+
+@media(max-width:768px) {
+
+    .sobre {
+        top: 8%;
+    }
+
+}
